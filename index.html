@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wind mill</title>
+</head>
+<style>
+    .rajesh{
+        margin-left: 400px;
+        margin-top: 300px;
+    }
+ .circle{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+ }
+ .stand{
+    width: 15px;
+    height: 400px;
+    background-color: black;
+    position: relative;
+    z-index: -1;
+    bottom: 10px;
+    left: 15px;
+ }
+.blade1{
+    width: 500px;
+    height: 15px;
+    background-color:rgb(44, 39, 39);
+    border-radius: 80%;
+    position: absolute;
+    animation: move1 1s  linear infinite;
+}
+.blade2{
+width: 500px;
+    height: 15px;
+    background-color: rgb(83, 15, 255);
+    border-radius    : 80%;
+    position: absolute;
+    animation: move2 1s linear infinite;
+}
+.blade3{
+    width: 500px;
+    height: 15px;
+    background-color:rgb(7, 255, 168);
+    border-radius: 80%;
+    position: absolute;
+    animation: move3 0.10s  linear infinite;
+
+}
+body{
+    background-color: rgb(0, 255, 132);
+}
+@keyframes move1{
+    0%{
+        transform: rotate(90deg);
+    }
+    100%{
+        transform: rotate(270deg);
+    }
+}
+@keyframes move2{
+    0%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+@keyframes move3{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-180deg);
+    
+
+}
+}
+
+</style>
+
+<body>
+    <div class="rajesh">
+        <div class="circle">
+            <div class="blade1"></div>
+            <div class="blade2"></div>
+            <div class="blade3"></div>
+        </div>
+        <div class="stand"></div>
+    </div>
+    
+</body>
+</html>
